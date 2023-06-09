@@ -1,0 +1,15 @@
+package com.sodam.study.LiskovSubstitution;
+
+// 정사각형 클래스
+public class Square extends Shape {
+	private double side;
+
+	public Square(double side) {
+		this.side = side;
+	}
+
+	@Override
+	public double calculateArea() {
+		return side * side;
+	}
+} // end of class
